@@ -1,0 +1,405 @@
+/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    margin-top: 100px;
+    background-color: #ffffff;
+}
+*{
+    border-radius: 0 !important;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+#wrapper {
+    padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+
+}
+
+.navbar-merah{
+    background-color: #00ffc7;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.navbar-toggle .sr-only .icon-bar {
+    color:#fff;
+}
+
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #00ffc7;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+.navbar-brand {
+    color:#fff;
+}
+
+.navbar-brand :hover{
+    color:#dfdfdf;
+}
+.icon-bar {
+    color: #fff;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+ul.alert-dropdown {
+    width: 200px;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #2d2d2d;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+        color: #fff;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #00ffc7!important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+
+
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+
+/* Flot Chart Containers */
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* Custom Colored Panels */
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #00ffc7;
+}
+
+.panel-red > .panel-heading {
+    border-color: #00ffc7;
+    color: #fff;
+    background-color: #00ffc7;
+}
+
+
+.panel-red > a {
+    color: #00ffc7;
+}
+
+.panel-red > a:hover {
+    color: #3a3a3a;
+    
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}
+.navbar-nav>li{
+    margin-bottom: 2px !important;
+}
+
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper select{
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.tombol-menu {
+    color: #ffffff;
+}
+
+/* Kastem */
+.post-thumb{
+  margin: -1px -1px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline .post-thumb img {
+  width: 100%;
+}
+
+.post-thumb iframe{
+  width: 100%;
+  min-height: 270px;
+  border: 0;
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+.judul{
+  color: #3a3a3a;
+  text-align: center;
+}
+.post-bottom{
+  border-top: 1px solid #eeeeee;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin: 20px -20px 0;
+  padding: 20px 20px 0;
+}
+
+.masonery_area .single-blog .post-thumb{
+  height: auto;
+}
+
+.masonery_area .single-blog .judul{
+  margin-top: 5px;
+}
+
+.masonery_area .single-blog .judul a{
+  font-size: 20px;
+}
+
+.masonery_area .single-blog .post-thumb img{
+  height:auto;
+}
+
+.masonery_area .single-blog .post-bottom{
+  border-top:0px;
+  padding-top:0;
+  margin-top:15px;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color:#00ffc7; 
+    
+}
+
+.barang-area{
+  margin-top: 5px;
+}
+
+.ket-barang{
+    margin-top: 10px;
+}
+
+.bekgron{
+    background-color:#00ffc7; 
+}
+
+.login-panel{
+    margin-top:10px
+}
+
+.panel-default{
+
+}
+.panel-body{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.panel-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.panel-head{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-admin{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-dewim {
+    background: #00ffc7; 
+    border-color: #00ffc7; 
+    color: #3a3a3a; 
+    font-size: 14px; 
+    border-radius: 0px; 
+    border-width: 0px;
+}
+.btn-dewim:hover {
+    background: #78fbde; 
+    border-color: #78fbde; 
+    color: #fff;
+}
+
+/*Akhir Kastem */

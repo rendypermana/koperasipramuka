@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+$(function() {
+var data_table = "";
+       $.ajax({
+			url: "http://localhost/percobaan001/json/women.php",
+			//force to handle it as text
+			dataType: "json",
+			success: function(data) {
+			 for (var i =0; i<data.length; i++){
+				 data_table +="<tr> <td> "+data[i].nama_women+"</td> <td> "+data[i].age+"</td><td>"+data[i].tarif+"</td><td><img src=../uploads/"+data[i].image+" height=100></td></tr>";
+			 }
+			  $('#test').append(data_table);	
+			}
+		});
+  });
+</script>
+</head>
+<body>
+<table border="1" style="width:30%" id="test">
+<tr>
+<td>nama</td>
+<td>age</td>
+<td>tarif</td>
+<td>bio</td>
+</tr>
+</table>
+</body>
+</html>
